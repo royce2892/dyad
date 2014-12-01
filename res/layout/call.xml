@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.andro_yce.CallActivity" >
+
+    <com.andro_yce.dyad.CircleImageView
+        android:id="@+id/face"
+        android:layout_width="@dimen/call_face_size"
+        android:layout_height="@dimen/call_face_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/call_margin_top"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/callState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/face"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/call_margin_top"
+        android:textColor="@color/action_bar_text_color"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/callAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/callState"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/call_margin_top"
+        android:textColor="@color/action_bar_text_color"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

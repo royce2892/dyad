@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="large">22sp</dimen>
+    <dimen name="medium">18sp</dimen>
+    <dimen name="small">14dp</dimen>
+
+    <!-- Login screen dimesnsions -->
+    <dimen name="login_text_width">100dp</dimen>
+    <dimen name="login_code_text_width">150dp</dimen>
+    <dimen name="login_edit_width">200dp</dimen>
+    <dimen name="login_margin_top">40dp</dimen>
+    <dimen name="login_margin_left">30dp</dimen>
+
+    <!-- settings screen dimesnsions -->
+    <dimen name="settings_width">126dp</dimen>
+    <dimen name="settings_height">166dp</dimen>
+    <dimen name="settings_edit_width">200dp</dimen>
+    <dimen name="settings_margin_top">40dp</dimen>
+    <dimen name="settings_margin_left">15dp</dimen>
+    <dimen name="settings_margin_right">55dp</dimen>
+
+    <!-- Splash screen dimesnsions -->
+    <dimen name="splash_image_size">100dp</dimen>
+    <dimen name="splash_code_margin_top">150dp</dimen>
+    <dimen name="splash_margin">45dp</dimen>
+
+    <!-- Message screen dimesnsions -->
+    <dimen name="msg_div_height">10dp</dimen>
+    <dimen name="msg_edit_text_width">400dp</dimen>
+    <dimen name="msg_smiley_height">220dp</dimen>
+    <dimen name="msg_edit_height">60dp</dimen>
+    <dimen name="msg_smiley_margin">10dp</dimen>
+    <dimen name="msg_smiley">30dp</dimen>
+
+    <!-- call screen dimesnsions -->
+    <dimen name="call_face_size">220dp</dimen>
+    <dimen name="call_margin_top">40dp</dimen>
+
+</resources>

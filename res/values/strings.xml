@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dyad</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_call">Call</string>
+    <string name="name">Name</string>
+    <string name="code_enter">Secret Code</string>
+    <string name="code">Got a secret code ?</string>
+    <string name="code_hint">Ask your partner to signup with the above secret code</string>
+    <string name="splash_code">Code</string>
+    <string name="password">Password</string>
+    <string name="phone_number">Mobile</string>
+    <string name="signup">Sign Up</string>
+    <string name="hint_msg">Compose message</string>
+    <string name="hint_status">Compose status</string>
+    <string name="launcher">Launcher</string>
+    <string name="size">Text Size</string>
+    <string name="version">Version</string>
+    <string name="beta">Beta</string>
+
+</resources>

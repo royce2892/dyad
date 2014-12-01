@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.andro_yce.dyad.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/user_profile_image"
+        android:layout_width="@dimen/settings_width"
+        android:layout_height="@dimen/settings_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/settings_margin_left"
+        android:src="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/user_change_status"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/settings_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/settings_margin_left"
+        android:layout_toRightOf="@+id/user_profile_image"
+        android:gravity="center"
+        android:text="@string/hint_status"
+        android:textSize="@dimen/large" />
+
+    <EditText
+        android:id="@+id/user_change_status_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/settings_height"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/settings_margin_left"
+        android:layout_toRightOf="@+id/user_profile_image"
+        android:gravity="center"
+        android:hint="@string/hint_status"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_image"
+        android:layout_marginLeft="@dimen/settings_margin_left"
+        android:gravity="left"
+        android:text="@string/size"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/text_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_size"
+        android:layout_marginLeft="@dimen/settings_margin_left"
+        android:layout_marginTop="@dimen/settings_margin_top"
+        android:gravity="left"
+        android:text="@string/version"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/version_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_version"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/settings_margin_right"
+        android:text="@string/beta"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

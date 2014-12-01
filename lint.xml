@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InlinedApi">
+        <ignore path="src/com/andro_yce/dyad/LoginActivity.java" />
+        <ignore path="src/com/andro_yce/dyad/SplashActivity.java" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/com/andro_yce/dyad/MessagingActivity.java" />
+        <ignore path="src/com/andro_yce/dyad/SettingsActivity.java" />
+    </issue>
+</lint>
