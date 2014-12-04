@@ -93,18 +93,20 @@ public class LoginActivity extends Activity {
 				password = Math.random() * (10000000 - 1000000) + "";
 				phone = phoneField.getText().toString();
 
-				user.setUsername(username);
+				user.setUsername(phone);
 				user.setPassword(password);
 				user.put("myNumber", phone);
+				user.put("firstName", username);
 				if (!hasCode.isChecked()) {
 					user.put("isPaired", false);
 					user.put("secretCode",
 							(int) (Math.random() * (9999 - 1000)) + "");
 					signup();
+				} else {
+					user.put("isPaired", true);
+					user.put("secretCode", codeField.getText().toString());
+					signup();
 				}
-				user.put("isPaired", true);
-				user.put("secretCode", codeField.getText().toString());
-				signup();
 			}
 
 		});
@@ -170,8 +172,10 @@ public class LoginActivity extends Activity {
 			editor.putString("parse_user", username);
 			editor.putString("parse_pass", password);
 			editor.putString("my_number", phone);
-			editor.putString("my_object_id", ParseUser.getCurrentUser()
-					.getObjectId());
+			/*
+			 * editor.putString("my_object_id", ParseUser.getCurrentUser()
+			 * .getObjectId());
+			 */
 		}
 		editor.commit();
 	}
