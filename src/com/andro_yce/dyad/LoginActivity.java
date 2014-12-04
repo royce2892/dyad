@@ -169,7 +169,7 @@ public class LoginActivity extends Activity {
 		Editor editor = sharedpreferences.edit();
 		editor.putBoolean("signup", isSignedUp);
 		if (isSignedUp) {
-			editor.putString("parse_user", username);
+			editor.putString("parse_user", phone);
 			editor.putString("parse_pass", password);
 			editor.putString("my_number", phone);
 			/*
